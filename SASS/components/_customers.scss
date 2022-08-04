@@ -1,0 +1,40 @@
+/* постійні клієнти */
+.zxdw{
+    display: flex;
+}
+
+
+  
+    
+    
+  
+    
+    
+
+.icons-klient:hover{
+    border: 1px solid var( --blue-color);
+    color: var( --blue-color);
+}
+.cust-icon{
+   
+    fill: currentColor;
+  
+}
+.cust-icon:hover{
+    fill: var( --blue-color);
+}
+.icons-klient{
+    width: 170px;
+    height: 90px;
+    left: 215px;
+    top: 2493px;
+    
+    border: 1px solid  var( --svg-color);
+    border-radius: 4px;
+    margin-left: 30px;
+   @include centeredFlex (center);
+  
+    color: var( --svg-color);
+}
+
+

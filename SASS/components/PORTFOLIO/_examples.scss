@@ -1,0 +1,46 @@
+
+
+
+
+.examples{
+    display: flex;
+        
+    flex-wrap: wrap;
+    margin-left: 160px;
+    margin-right: 50px;
+    margin-bottom: 90px;
+    justify-content: baseline;
+      }
+      .examples li + li{
+        margin-left: 30px;
+        margin-top: 30px;
+      }
+      .examples-intem{
+        border: 1px solid #EEEEEE;
+      }
+      .examples-titel{
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height, or 200% */
+    
+    letter-spacing: 0.06em;
+    
+    color: #212121;
+    
+        
+      }
+      .examples-type{
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+      }

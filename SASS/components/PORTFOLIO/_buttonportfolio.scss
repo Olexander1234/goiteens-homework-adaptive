@@ -1,0 +1,61 @@
+/* портфоліо */
+
+/* кнопки */
+.link-list  .header-nav {
+    margin-bottom: 0px;
+}
+.qwerty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+  .qwerty{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.qwerty li:not(:last-child){
+    margin-right: 8px;
+}
+
+.liter-link:hover{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.liter-link{
+    display: inline-block;
+    justify-content: center;
+    background: #F5F4FA;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+
+letter-spacing: 0.03em;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+text-align: center;
+align-items: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+display: inline-block;
+    
+border-radius:  4px;
+min-width: 73px;
+height: 38px;
+padding:  6px 22px;
+
+display: flex;
+
+}
