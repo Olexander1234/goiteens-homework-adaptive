@@ -1147,9 +1147,6 @@ ul {
   display: flex;
 }
 
-.what {
-  padding: 0;
-}
 @media (max-width: 1199px) {
   .what {
     display: none;
