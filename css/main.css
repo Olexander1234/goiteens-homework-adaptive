@@ -547,7 +547,7 @@ ul {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    margin-left: -15px;
+    margin: -15px;
   }
 }
 @media (min-width: 1200px) {
@@ -565,7 +565,7 @@ ul {
     width: -webkit-calc((100% - 60px) / 2);
     width: -moz-calc((100% - 60px) / 2);
     width: calc((100% - 60px) / 2);
-    margin-left: 15px;
+    margin: 15px;
   }
 }
 @media (min-width: 1200px) {
