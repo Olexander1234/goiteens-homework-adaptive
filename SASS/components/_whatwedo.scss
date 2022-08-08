@@ -1,29 +1,35 @@
 /* Чим мит займаємось */
 .planchete{
-    display: flex;
-    justify-content: center;
+    @include centeredFlex ();
+
+
+    & div + div{
+        margin-left: 30px;
+    }
   
 }
-.planchete div + div{
-    margin-left: 30px;
-}
+
 .robota{
     width: 370px;
     height: 294px;
+
+
+
+    &-link{
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+    
+    
+    }
 }
-.robota-link{
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
 
-color: #212121;
-
-
-}
 .texteria{
     resize: none;
 }

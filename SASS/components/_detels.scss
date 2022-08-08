@@ -1,24 +1,11 @@
 /* увага до деталей */
 
 .details-link{
+  @media (min-width: $desktop){
     display: flex;
+  }
 }
-.svg-detels{
-    fill:  var( --black-color);
-    width: 270px;
-height: 120px;
-left: 515px;
-top: 774px;
 
-background: var(--bacround-button);
-border-radius: 4px;
-// display: flex;
-// justify-content: center;
-// align-items: center;
-@include centeredFlex ();
-margin-bottom: 30px;
-
-}
 .detels-intem{ 
     color: var( --link-text-color);
     font-family: 'Roboto';
@@ -43,5 +30,19 @@ margin-bottom: 30px;
     /* identical to box height, or 188% */
     
     letter-spacing: 0.03em;
+    
+    }
+    .svg-detels{
+        fill:  var( --black-color);
+        width: 270px;
+      height: 120px;
+      left: 515px;
+      top: 774px;
+    
+    background: var(--bacround-button);
+    border-radius: 4px;
+    
+    @include centeredFlex ();
+    margin-bottom: 30px;
     
     }

@@ -5,28 +5,26 @@
     margin-bottom: 0px;
 }
 .qwerty{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @include centeredFlex ();
     margin-bottom: 50px;
 
+
+
+    &{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
 }
-  .qwerty{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+ 
 .qwerty li:not(:last-child){
     margin-right: 8px;
 }
 
-.liter-link:hover{
-    background-color: #2196F3;
-    color: #FFFFFF;
-}
+
 
 .liter-link{
-    display: inline-block;
-    justify-content: center;
+ @include centeredFlex (inline-block);
     background: #F5F4FA;
     font-family: 'Roboto';
 font-style: normal;
@@ -45,7 +43,7 @@ line-height: 26px;
 /* identical to box height, or 162% */
 
 text-align: center;
-align-items: center;
+
 letter-spacing: 0.03em;
 
 color: #212121;
@@ -58,4 +56,10 @@ padding:  6px 22px;
 
 display: flex;
 
+
+
+&:hover{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
 }

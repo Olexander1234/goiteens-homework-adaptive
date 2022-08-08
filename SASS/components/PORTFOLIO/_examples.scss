@@ -3,21 +3,23 @@
 
 
 .examples{
-    display: flex;
-        
+  @include centeredFlex (baseline);
     flex-wrap: wrap;
     margin-left: 160px;
     margin-right: 50px;
     margin-bottom: 90px;
-    justify-content: baseline;
+    
+
+
+    & li + li{
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+    &-intem{
+      border: 1px solid #EEEEEE;
+    }
       }
-      .examples li + li{
-        margin-left: 30px;
-        margin-top: 30px;
-      }
-      .examples-intem{
-        border: 1px solid #EEEEEE;
-      }
+     
       .examples-titel{
         font-family: 'Roboto';
     font-style: normal;

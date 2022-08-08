@@ -19,10 +19,12 @@
    
     fill: currentColor;
   
+
+    &:hover{
+        fill: var( --blue-color);
+    }
 }
-.cust-icon:hover{
-    fill: var( --blue-color);
-}
+
 .icons-klient{
     width: 170px;
     height: 90px;

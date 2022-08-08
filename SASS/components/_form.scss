@@ -7,15 +7,32 @@
     position: relative;
     text-align: start;
     color: var( --text-color);
+
+
+    & label{
+        font-size: 12px;
+        margin-bottom: 4px
+    }
+
+
+    &-link{
+        margin-top: 20px;
+    }
+
+
+    &-label{
+        margin-bottom: 30px;
+    }
     
  
 }
 .field{
 margin-bottom: 20px;
+&:not(:last-child){
+    margin-bottom: 10px;
 }
-.fiend-label{
-    margin-bottom: 30px;
 }
+
 
 .title{
     font-family: 'Roboto';
@@ -28,9 +45,7 @@ letter-spacing: 0.03em;
 
 color: var( --link-text-color);
 }
-.field:not(:last-child){
-    margin-bottom: 10px;
-}
+
 
 .form-fiend,
 .textarea{
@@ -59,18 +74,13 @@ outline: none;
  
 }
 
-.fiend label{
-    font-size: 12px;
-    margin-bottom: 4px
-}
+
 .btn{
     width: 200px;
  
  
 }
-.fiend-link{
-    margin-top: 20px;
-}
+
 .contract{
     color: var( --blue-color);
     text-decoration: underline;
@@ -80,38 +90,38 @@ outline: none;
 
 .fiend-checkbox{
     appearance: none;
-}
-.fiend-checkbox:focus-within + .checkbox-icon{
-    border: 2px solid  var( --blue-color);
+
+
+    &:focus-within + .checkbox-icon{
+        border: 2px solid  var( --blue-color);
+    }
 }
 
-  .checkbox-input{
-    margin-top: 10px;
-  }
-.checkbox-icon{
+.checkbox{
+
+
+    &-icon{
    
-    display: inline-block;
-    margin-right: 8px;
-    padding: 0;
-    border: 2px solid #000;
-    border-radius: 2px;
-} 
+        display: inline-block;
+        margin-right: 8px;
+        padding: 0;
+        border: 2px solid #000;
+        border-radius: 2px;
+    } 
+
+
+    &-input{
+        margin-top: 10px;
+      } 
+}
+
+
 .fiend-checkbox:checked + .checkbox-icon{
     background-color:  var( --blue-color);
     border: 2px solid  var( --blue-color);
 }
 
-/* .fiend-checkbox::after{
-    display: inline-flex;
-    content: '';
-    width: 10px;
-    height: 10px;
-    border: 1px solid red;
 
-}
- .fiend-checkbox:focus.fiend-checkbox::after{
-    background-color: red;
- } */
  .fiend:focus-within .form-fiend,
  .fiend:hover .form-fiend,
  .fiend:focus-within textarea,

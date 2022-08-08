@@ -51,12 +51,27 @@ ul {
 }
 
 .contairn {
-  width: 1200px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (min-width: 480px) {
+  .contairn {
+    width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .contairn {
+    width: 780px;
+  }
+}
+@media (min-width: 1200px) {
+  .contairn {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -359,13 +374,22 @@ ul {
   text-align: start;
   color: var(--text-color);
 }
+.fiend label {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.fiend-link {
+  margin-top: 20px;
+}
+.fiend-label {
+  margin-bottom: 30px;
+}
 
 .field {
   margin-bottom: 20px;
 }
-
-.fiend-label {
-  margin-bottom: 30px;
+.field:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .title {
@@ -377,10 +401,6 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--link-text-color);
-}
-
-.field:not(:last-child) {
-  margin-bottom: 10px;
 }
 
 .form-fiend,
@@ -414,17 +434,8 @@ ul {
   margin: 0;
 }
 
-.fiend label {
-  font-size: 12px;
-  margin-bottom: 4px;
-}
-
 .btn {
   width: 200px;
-}
-
-.fiend-link {
-  margin-top: 20px;
 }
 
 .contract {
@@ -437,13 +448,8 @@ ul {
      -moz-appearance: none;
           appearance: none;
 }
-
 .fiend-checkbox:focus-within + .checkbox-icon {
   border: 2px solid var(--blue-color);
-}
-
-.checkbox-input {
-  margin-top: 10px;
 }
 
 .checkbox-icon {
@@ -455,23 +461,15 @@ ul {
      -moz-border-radius: 2px;
           border-radius: 2px;
 }
+.checkbox-input {
+  margin-top: 10px;
+}
 
 .fiend-checkbox:checked + .checkbox-icon {
   background-color: var(--blue-color);
   border: 2px solid var(--blue-color);
 }
 
-/* .fiend-checkbox::after{
-    display: inline-flex;
-    content: '';
-    width: 10px;
-    height: 10px;
-    border: 1px solid red;
-
-}
- .fiend-checkbox:focus.fiend-checkbox::after{
-    background-color: red;
- } */
 .fiend:focus-within .form-fiend,
 .fiend:hover .form-fiend,
 .fiend:focus-within textarea,
@@ -485,12 +483,40 @@ ul {
 }
 
 /* увага до деталей */
-.details-link {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 1200px) {
+  .details-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.detels-intem {
+  color: var(--link-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.detels-lorem {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+  letter-spacing: 0.03em;
 }
 
 .svg-detels {
@@ -521,32 +547,6 @@ ul {
   margin-bottom: 30px;
 }
 
-.detels-intem {
-  color: var(--link-text-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-}
-
-.detels-lorem {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--text-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
-  letter-spacing: 0.03em;
-}
-
 /* наша команда */
 .mn {
   background-color: var(--bacround-button);
@@ -562,18 +562,6 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.card-link {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.card-link div + div {
-  margin-left: 30px;
-}
-
 .card {
   background: var(--white-color);
   /* material shadow v1 */
@@ -583,6 +571,16 @@ ul {
   -webkit-border-radius: 0px 0px 4px 4px;
      -moz-border-radius: 0px 0px 4px 4px;
           border-radius: 0px 0px 4px 4px;
+}
+.card-link div + div {
+  margin-left: 30px;
+}
+.card-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .team {
@@ -598,7 +596,6 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
 .team-link {
   color: var(--text-color);
   font-family: "Roboto";
@@ -629,7 +626,6 @@ ul {
 .cust-icon {
   fill: currentColor;
 }
-
 .cust-icon:hover {
   fill: var(--blue-color);
 }
@@ -667,11 +663,9 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .footer li + li {
   margin-top: 5px;
 }
-
 .footer ul + ul {
   margin-top: 20px;
 }
@@ -695,11 +689,9 @@ ul {
 .vip {
   color: aliceblue;
 }
-
 .vip-studio {
   color: var(--blue-color);
 }
-
 .vip, .vip-studio {
   font-family: "Raleway";
   font-style: normal;
@@ -756,7 +748,6 @@ ul {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-
 .social-network-list li + li {
   margin-left: 10px;
 }
@@ -832,11 +823,11 @@ ul {
 }
 
 .social-link {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
      -moz-box-pack: center;
@@ -884,7 +875,6 @@ ul {
           align-items: center;
   margin-bottom: 50px;
 }
-
 .qwerty {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -894,18 +884,22 @@ ul {
   margin-right: 8px;
 }
 
-.liter-link:hover {
-  background-color: #2196F3;
-  color: #FFFFFF;
-}
-
 .liter-link {
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #F5F4FA;
   font-family: "Roboto";
   font-style: normal;
@@ -921,11 +915,6 @@ ul {
   line-height: 26px;
   /* identical to box height, or 162% */
   text-align: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   letter-spacing: 0.03em;
   color: #212121;
   display: inline-block;
@@ -935,11 +924,11 @@ ul {
   min-width: 73px;
   height: 38px;
   padding: 6px 22px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
+}
+.liter-link:hover {
+  background-color: #2196F3;
+  color: #FFFFFF;
 }
 
 .examples {
@@ -948,24 +937,27 @@ ul {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   margin-left: 160px;
   margin-right: 50px;
   margin-bottom: 90px;
-  -webkit-box-pack: baseline;
-  -webkit-justify-content: baseline;
-     -moz-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
 }
-
 .examples li + li {
   margin-left: 30px;
   margin-top: 30px;
 }
-
 .examples-intem {
   border: 1px solid #EEEEEE;
 }
@@ -1069,8 +1061,12 @@ ul {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
 .planchete div + div {
   margin-left: 30px;
 }
@@ -1079,7 +1075,6 @@ ul {
   width: 370px;
   height: 294px;
 }
-
 .robota-link {
   font-family: "Roboto";
   font-style: normal;
