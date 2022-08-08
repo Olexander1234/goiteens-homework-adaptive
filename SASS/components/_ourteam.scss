@@ -1,6 +1,10 @@
 /* наша команда */
 .mn{
     background-color: var(--bacround-button);
+    @media (min-width: $mobile) {
+   width: 482;
+        
+    }
 }
 .our-team{
     

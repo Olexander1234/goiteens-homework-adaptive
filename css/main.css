@@ -577,6 +577,11 @@ ul {
 .mn {
   background-color: var(--bacround-button);
 }
+@media (min-width: 480px) {
+  .mn {
+    width: 482;
+  }
+}
 
 .our-team {
   font-family: "Roboto";
