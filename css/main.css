@@ -4,7 +4,6 @@ img {
 }
 
 ul {
-  padding: 0;
   margin: 0;
 }
 
@@ -44,10 +43,6 @@ a {
 body {
   fill: #757575;
   background-color: #ffffff;
-}
-
-ul {
-  padding: 0;
 }
 
 .contairn {
@@ -626,6 +621,7 @@ ul {
 }
 @media (min-width: 1200px) {
   .card-link div + div {
+    margin-bottom: 30px;
     margin-left: 30px;
   }
 }
@@ -652,6 +648,19 @@ ul {
             align-items: center;
   }
 }
+@media (min-width: 768px) {
+  .igor {
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .igor {
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+}
+
 .team {
   color: #212121;
   font-family: "Roboto";
