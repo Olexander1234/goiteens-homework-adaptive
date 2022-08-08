@@ -15,7 +15,18 @@
   
 
 .card{
-
+  
+    @media (min-width: $tablet) {
+        width: calc((100% - 2 * 30px) /2) ;
+       
+        }
+  
+        @media (min-width: $desktop) {
+            width: calc((100% - 4 * 30px) /4) ;
+            
+        }
+        
+       
 
     
     background: var(--white-color);
@@ -26,13 +37,44 @@
 
     &-link div + div{ 
         margin-left: 30px;
+       
+        @media (min-width: $tablet) {
+            margin-bottom: 30px;
+           
+            
+        }
         }
 
 
         &-link{
-            display: flex;
+          
+        
+            @media (min-width: $tablet) {
+                flex-wrap: wrap;
+              
+           
+                display: flex;
+               justify-content: baseline;
+                 align-items: center;;
+             
+               
+          
+                
+              }
+              @media (min-width: $desktop){
+               
+               
+              }
+          
+           
+              
+            }
+          
+
+           
         }
-}
+       
+
 .team {
     color: #212121;
     font-family: 'Roboto';
