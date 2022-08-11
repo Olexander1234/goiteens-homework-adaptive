@@ -14,9 +14,31 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
-
+@media (min-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: -15px;
 }
- 
+}
+ .fliter-item{
+    @media (min-width: $mobile) and (max-width:767px){
+        margin-top: 15px;
+        margin-left: 8px;
+
+    }
+    @media (min-width: $tablet){
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-bottom: 30px;
+    }
+    @media (min-width: $desktop){
+       
+        margin-bottom: 50px;
+    }
+
+ }
 .qwerty li:not(:last-child){
     margin-right: 8px;
 }

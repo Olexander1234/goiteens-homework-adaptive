@@ -1,71 +1,20 @@
 /* футер */
-
-
-.footer{
-    &-item{
-        padding-top: 60px;
-        padding-bottom: 60px;
-        
-        
-    }
-
-
-       & li + li {
-        margin-top: 5px;
-    }
-
-
-    & ul + ul {
-    margin-top: 20px;
-        
-    }
-
-
-   
-}
-.contairn .foter-contairn{
-    padding-top: 60px;
-    padding-bottom: 10px;
-  margin-top: 60px;
-
-  @media (max-width: 767px) {
-    text-align: center;
-    
-  }
-  @media (min-width: $tablet) {
-    display: flex;
-    justify-content: space-around;
-    
-  }
-  @media (min-width: $desktop) {
-    display: flex;
-    align-items: baseline;
-  }
-   
-}
-
 .vip{
-   
-    color: aliceblue;
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+/* identical to box height */
 
+letter-spacing: 0.03em;
 
-    &-studio{
-        color: var( --blue-color);
-    }
+color: #fff;
 
-
-    &, &-studio{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px; 
-    }
+&-studio{
+    color:  #2196F3;  
 }
-
-
-
-
+}
 
 .ua{
     font-family: 'Roboto';
@@ -77,48 +26,65 @@ line-height: 24px;
 
 letter-spacing: 0.03em;
 
-color: var(--white-color);
+color: #FFFFFF;
+
+
 }
 .link-king1{
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var( --text-color);
-    margin-bottom: 100px;
-    margin-bottom: 60px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
+
 }
-
-
-
-
- 
-
-.link {
-    color: var( --link-text-color);
-}
-.nav-link:hover {
-    color: var( --blue-color);
-}
-
-.nav-link-item:hover{
-    color: var( --blue-color);
-}
-
+ .foter-contairn{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 60px;
+    @media (max-width: 767px) {
+        text-align: center;
+      }
   
+      @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-around;
+      }
   
-  .social-network-list{
-    margin-top: 20px;
-    display: flex;
-    align-items: baseline;
-
-
-    & li + li{
-        margin-left: 10px;
+      @media (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+      }
+}
+.adres-cntact{
+    @media (max-width: 767px) {
+        margin-bottom: 60px;
       }
     
-  }
-  
+      @media (min-width: $desktop) {
+        margin-right: 70px;
+      }
+}
+.footer-cntact{
+margin-top: 20px;
 
+
+& li + li{
+ margin-top: 9px;
+}
+}
+.social-network-list{
+    display: flex;
+   
+}
+.social-network-list li + li{
+    margin-left: 10px;
+}
+.network-item{
+    margin-top: 5px;
+}
