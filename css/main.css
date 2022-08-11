@@ -44,6 +44,11 @@ ul {
   padding: 0;
 }
 
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
 .contairn {
   width: 100%;
   margin-right: auto;
@@ -818,30 +823,8 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.foter-contairn {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-top: 60px;
-}
-@media (max-width: 767px) {
-  .foter-contairn {
-    text-align: center;
-  }
-}
-@media (min-width: 768px) {
-  .foter-contairn {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-  }
-}
 @media (min-width: 1200px) {
-  .foter-contairn {
+  .contairn.foter-contairn {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -854,10 +837,30 @@ ul {
             align-items: baseline;
   }
 }
+@media (max-width: 767px) {
+  .contairn.foter-contairn {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .contairn.foter-contairn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  .contairn.foter-contairn .join {
+    margin-top: 20px;
+  }
+}
 
 @media (max-width: 767px) {
   .adres-cntact {
-    margin-bottom: 60px;
+    margin-bottom: 130px;
   }
 }
 @media (min-width: 1200px) {
@@ -866,9 +869,6 @@ ul {
   }
 }
 
-.footer-cntact {
-  margin-top: 20px;
-}
 .footer-cntact li + li {
   margin-top: 9px;
 }
@@ -887,6 +887,16 @@ ul {
 
 .network-item {
   margin-top: 5px;
+}
+
+.footer {
+  background-color: var(--hero-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.adress {
+  margin-top: 20px;
 }
 
 /* блок приєднуйтесь та соціальні мережі */
@@ -914,12 +924,25 @@ ul {
 }
 
 .join {
-  margin-left: 250px;
   margin-top: -88px;
   padding-bottom: 100px;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+}
+@media (min-width: 1200px) {
+  .join {
+    margin-left: 250px;
+  }
+}
+
+.network-item {
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .network-item {
+    margin-left: 135px;
+  }
 }
 
 .join-networks {

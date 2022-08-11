@@ -27,11 +27,21 @@
  
  }
  .join{
-     margin-left: 250px;
+     
      margin-top: -88px;
      padding-bottom: 100px;
      justify-content: space-around;
-    
+    @media (min-width: $desktop) {
+      margin-left: 250px;
+      
+    }
+ }
+ .network-item{
+  margin-top: 20px;
+  @media (max-width: 767px) {
+    margin-left: 135px;
+  }
+  
  }
  .join-networks{
   color: var(--bacround-button);

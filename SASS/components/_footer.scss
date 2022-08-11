@@ -43,35 +43,39 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 
 }
- .foter-contairn{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-top: 60px;
-    @media (max-width: 767px) {
-        text-align: center;
-      }
-  
-      @media (min-width: $tablet) {
-        display: flex;
-        justify-content: space-around;
-      }
-  
-      @media (min-width: $desktop) {
+ .contairn.foter-contairn{
+    
+      
+    @media (min-width: $desktop) {
         display: flex;
         align-items: baseline;
+    }
+    @media (max-width: 767px ) {
+        text-align: center;
+
+    }
+
+    @media (min-width: $tablet ) {
+      display: flex;
+      justify-content: space-around;
+      .join{
+        margin-top: 20px;
       }
+    
+    }
+
 }
 .adres-cntact{
     @media (max-width: 767px) {
-        margin-bottom: 60px;
-      }
-    
-      @media (min-width: $desktop) {
-        margin-right: 70px;
-      }
+        margin-bottom: 130px;
+      
+    }
+ @media (min-width: $desktop) {
+ margin-right: 70px;
+ }
 }
 .footer-cntact{
-margin-top: 20px;
+
 
 
 & li + li{
@@ -87,4 +91,12 @@ margin-top: 20px;
 }
 .network-item{
     margin-top: 5px;
+}
+.footer{
+    background-color: var(--hero-color);
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.adress{
+    margin-top: 20px;
 }
