@@ -1,0 +1,45 @@
+.link-list{
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-start;
+    @include centeredFlex (flex-start);
+    margin-left: auto;
+    & li + li{
+        margin-left: 50px;
+    }
+    
+}
+.link-king{ 
+    color: #757575;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    &:hover{
+        color: #2196F3;
+        
+     }
+
+}
+.contact{
+    fill: currentColor;
+    &:hover{
+        color: #2196F3;
+       
+    }
+    &{
+        margin-right: 10px;
+      
+        margin-left: -20px;
+        
+    
+    }
+    &:hover{
+        color: #2196F3;
+    }
+    
+}
