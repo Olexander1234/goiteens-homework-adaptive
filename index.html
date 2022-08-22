@@ -12,131 +12,77 @@
 </head> 
 <body>
    
- <header class="section1">
-    <div class="contairn header-nav">
-        <a class="logo" href=""> <span class="logo-span" > Web </span> Studio</a>
-        <!--Кнопка мобільного вікна-->
-        <button type="button" class="mobile-button is-open"data-menu-button
-        aria-expanded:"false">
-            <svg width="40"
-            height="40" aria-label="Пееремикач мобільного вікна">
-                <use class="mobie-close" href="./img/icons/Icons.svg#burger"></use>
-                <use class="mobie-pen" href="./img/icons/Icons.svg#coose"></use>
-            </svg>
-        </button>
-        <div class="mobille-menu"id="mobille-menu" data-menu>
-            <div class="">
-                <nav class="navigatin">
-                    <ul class="nav-list">
-                        <li > <a  class="link-item curent" href="" >Студія</a></li>
-                        <li> <a class="link-item" href="./portfolio.html">Портфоліо</a></li>
-                        <li> <a class="link-item" href="">Контакти</a></li>
-                        
+    <header>
+        <div class="container header-nav ">
+            <a class="logo" href="./"><span>Web</span>Studio</a>
+            <!-- Кнопка мобільного меню -->
+            <button 
+                    type="button" 
+                    class="mobile-button is-open" 
+                    data-menu-button 
+                    aria-expanded="false">
+                <svg width="40" 
+                    height="40" 
+                    aria-label="Перекмикач мобільного меню">
+                    <use class=" mobile-open" href="./img/icons/Icons.svg#burger"></use>
+                    <use class="mobile-close" href="./img/icons/Icons.svg#cose"></use>
+                </svg>
+            </button>
+    
+             <div class="mobile-menu" id="mobile-menu" data-menu>
+                <div class="navigation">
+                    <nav>             
+                    <ul class="nav-list">               
+                        <li class="list-item"><a class="link current" href="./">Студія</a></li>
+                        <li class="list-item"><a class="link" href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
+                        <li class="list-item"><a class="link" href="">Контакти</a></li>
+                    </ul> 
+                    </nav>
+            </div>
+                <div>
+                    <div class="contacts">
+                        <ul class="contacts-nav">
+                    <li>
+                        <a class="contacts-link" href="mailto:info@devstudio.com">
+                            <svg class="contact-icon" width="16" height="12">
+                                <use href="./img/icons.svg#icon-envelope-hover" ></use>
+                            </svg>                
+                        info@devstudio.com
+                        </a>
+                    </li>
+                    <li><a class="contacts-link" href="tel:+380961111111">
+                        <svg class="contact-icon" width="10" height="16">
+                            <use href="./img/icons.svg#icon-Phone"></use>
+                        </svg>
+                        +38 096 111 11 11</a></li>
+                        </ul>
+                    </div>
+                    <ul class="networks-list">
+                        <li class="networks-item">
+                            <a href="" rel="noopener, noreferrer" class="networks-link">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="networks-item">
+                            <a href="" rel="noopener, noreferrer" class="networks-link">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="networks-item">
+                            <a href="" rel="noopener, noreferrer" class="networks-link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="networks-item">
+                            <a href="" rel="noopener, noreferrer" class="networks-link">
+                                Linkedin
+                            </a>
+                        </li>
                     </ul>
-
-                </nav>
-            </div>
-            <div>
-            <div class="contact">
-                <ul class="contact-nav">
-                    <ul class="link-list">
-                        <li><a class="link-king"  href="mailto:info@devstudio.com">
-                           <svg  class="contact"  width="16" height="12">
-                               <use href="./img/icons/Icons.svg#icon-mesenger"></use>
-                   
-                           </svg>
-                           
-                           info@devstudio.com</a></li>
-                   
-                           <li><a class="link-king" href="tel:+380 96 111 11 11">
-                               <svg class="contact" width="10" height="16">
-                                   <use href="./img/icons/Icons.svg#icon-Phone-book"></use>
-                       
-                                  </svg> 
-                              
-                               
-                                 +380 96 111 11 11</a></li>
-                   </ul>
-                </ul>
-            </div>
-        
-          <ul class="netvorkl-list">
-            <li class="network-item">
-                <a href="" class="nerwork-list">
-                    Instagram
-                </a>
-            </li>
-            <li class="network-item">
-                <a href="" class="nerwork-list">
-                    Twitter
-                </a>
-            </li>
-            <li class="network-item">
-                <a href="" class="nerwork-list">
-                    Facceboock
-                </a>
-            </li>
-            <li class="network-item">
-                <a href="" class="nerwork-list">
-                    Linkedin
-                </a>
-            </li>
-          </ul>
+                </div>
+            </div> 
         </div>
-      
- 
-
-
-    <!-- <nav>
-    
-        
-    
-   <ul class="nav-list">
-        <li > <a  class="link-item curent" href="" >Студія</a></li>
-        <li> <a class="link-item" href="./portfolio.html">Портфоліо</a></li>
-        <li> <a class="link-item" href="">Контакти</a></li>
-        
-    </ul>
-    
-    </nav>
-   
- <ul class="link-list">
-     <li><a class="link-king"  href="mailto:info@devstudio.com">
-        <svg  class="contact"  width="16" height="12">
-            <use href="./img/icons/Icons.svg#icon-mesenger"></use>
-
-        </svg>
-        
-        info@devstudio.com</a></li>
-
-        <li><a class="link-king" href="tel:+380 96 111 11 11">
-            <svg class="contact" width="10" height="16">
-                <use href="./img/icons/Icons.svg#icon-Phone-book"></use>
-    
-               </svg> 
-           
-            
-              +380 96 111 11 11</a></li>
-</ul>
-    <section>
-
-    
-<ul>   -->
-
-</section> 
-
-
-
-
-
-
-
-
-
-
-</ul>
-</div>
-</header> 
+        </header>
 
 <main>
 

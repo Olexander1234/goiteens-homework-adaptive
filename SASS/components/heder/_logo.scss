@@ -1,16 +1,19 @@
-.logo,.logo-span{
-    color: #000000;
-    
-    margin-bottom: 25px;
-    margin-top: 25px;
-    font-family: 'Raleway';
-font-weight: 700;
-font-size: 26px;
-line-height: 1.2;
-letter-spacing: 0.03em;
+.logo {
+  color: #000000;
 
+  font-family: Raleway, sans-serif;
+  font-style: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 3%;
+  margin-right: 300px;
 @media (max-width: 767px) {
-    margin: 16px;
-  margin: 15px;  
+  margin: 16px 15px;
+  margin-right: 300px;
 }
-} 
+}
+
+span {
+   
+    color: var(--blue-color);
+}
