@@ -1,12 +1,37 @@
 .nav-list{
     display: flex;
+    @media  (max-width:767px)   {
+    flex-direction: column;
+      
+    }
+    @media (min-width:$tablet)  {
+      margin-left:93px ;
+    }
+    @media (min-width:$desktop)  {
+      margin-left:93px ;
+    }
     margin-left: 93px;
 
 }
 
 .nav-list link{
-    padding-top: 32px;
-    padding-bottom: 32px;
+  color: #212121;
+    
+    color: #212121;
+    /* border: 1px solid red; */
+    margin-right: 54px;
+   display: flex;
+    font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
+    @media (max-width:767px) {
+      font-size: 40px;
+     
+      
+    }
 }
 .nav-list, .link, .curent{
     color:#2196F3;
@@ -27,16 +52,19 @@
   }
     
   .link-item{
-    color: #212121;
-     /* border: 1px solid red; */
-     margin-right: 54px;
-    display: flex;
-     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+    @media (min-width: $tablet) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      display: block;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      @media (max-width:767px){
+      &:not(:last-child){
+        margin-bottom: 32px;
+      }
+      }
+    }
+   
     &:hover{
         color: #2196F3;
     }

@@ -30,3 +30,23 @@
     }
     
 }
+
+.mobille-menu{
+    @media (max-width:767px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    
+        background-color: var(--white-color);
+       display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 48px 83px 48px 40px;
+        & .is-open{
+            display: flex;
+        }
+    }
+   
+}

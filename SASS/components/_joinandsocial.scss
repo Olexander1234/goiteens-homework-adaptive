@@ -62,9 +62,7 @@
      
  }
  
- .opq li + li{
-     margin-left: 10px;
- }
+ 
  .social-link{
     @include centeredFlex (inline-block);
      width: 44px;
