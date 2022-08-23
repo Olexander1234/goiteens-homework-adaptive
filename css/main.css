@@ -129,6 +129,7 @@ li {
     -moz-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    z-index: 2;
   }
   .mobile-button:hover, .mobile-button:focus {
     fill: var(--blue-color);
@@ -171,6 +172,7 @@ li {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 48px 83px 48px 40px;
+    z-index: 1;
   }
   .mobile-menu.is-open {
     display: -webkit-box;
@@ -1368,7 +1370,7 @@ li {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: var(--primary-text-color);
   }
 }
 @media (min-width: 1200px) {
@@ -1387,8 +1389,8 @@ li {
   }
 }
 .contacts-list .contacts-link:focus, .contacts-list .contacts-link:hover {
-  color: var(--blue-color);
-  fill: var --blue-color;
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .contact-icon {
@@ -1401,8 +1403,50 @@ li {
   }
 }
 .contact-icon:focus, .contact-icon:hover {
-  color: var();
+  color: var(--accent-color);
   fill: var(--accent-color);
+}
+
+.networks-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+     -moz-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+@media (min-width: 768px) {
+  .networks-list {
+    display: none;
+  }
+}
+
+.networks-item:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 10px;
+}
+
+.networks-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .logo {
