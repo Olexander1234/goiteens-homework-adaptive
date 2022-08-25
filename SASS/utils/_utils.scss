@@ -18,7 +18,7 @@ top: 1061px;
 }
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
  ul{ 
@@ -36,8 +36,9 @@ a{
     color: #2196F3;
 }
 body{
-    fill:#757575;
+   
     background-color: #ffffff;
+    font-family: roboto, sans-serif;
 }
 ul{
     padding: 0;

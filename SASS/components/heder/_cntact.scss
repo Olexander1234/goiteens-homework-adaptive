@@ -47,6 +47,10 @@
 
     @media screen and (min-width: $desktop) {
       margin-left: 30px;
+    
+    }
+    @media (max-width: $tablet) {
+      margin-bottom: 13px;
     }
   }
 
